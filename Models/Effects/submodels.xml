@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Gauche -->
+  <submodel>
+    <name>left-up-tracer</name>
+    <model>Aircraft/IL-2/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> 12.175200 </x-offset> <!-- -3.711 m -->
+    <y-offset>  8.832020 </y-offset> <!-- -2.692 m -->
+    <z-offset> -0.705381 </z-offset> <!-- -0.215 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+  </submodel>
+
+  <!--Droite  -->
+  <submodel>
+    <name>right-up-tracer</name>
+    <model>Aircraft/IL-2/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.62</delay>
+    <count>-1</count>
+    <x-offset> 12.175200 </x-offset> <!-- -3.711 m -->
+    <y-offset> -8.832020 </y-offset> <!--  2.692 m -->
+    <z-offset> -0.705381 </z-offset> <!-- -0.215 m -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+  </submodel>
+
+  <!-- Arrière -->
+  <submodel>
+    <name>left-down-tracer</name>
+    <model>Aircraft/IL-2/Models/Effects/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> -3.530180 </x-offset> <!-- 1.076 m -->
+    <y-offset> -0.505249 </y-offset> <!-- 0.154 m -->
+    <z-offset>  2.395010 </z-offset> <!-- 0.730 m -->
+    <yaw-offset>  165 </yaw-offset>
+    <pitch-offset> 10 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+  </submodel>
+
+</PropertyList>

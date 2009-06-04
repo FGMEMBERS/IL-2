@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>intcanope</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourcanope</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitrescanope</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitrescanope</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitrescanope</object-name>
+  </animation>
+
+  <!-- Pilot -->
+  <model>
+    <path>Aircraft/IL-2/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.485 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.335 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Gunner -->
+  <model>
+    <path>Aircraft/IL-2/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -0.025 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.195 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Gun -->
+  <model>
+    <path>Aircraft/IL-2/Models/Weapons/guns.xml</path>
+    <offsets>
+      <x-m> 0.502 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.582 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>   -15 </pitch-deg>
+      <heading-deg>  15 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Planches de bord 
+  <model>
+    <path>Aircraft/Arsenal-VG33/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -0.856 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.223 </z-m>
+    </offsets>
+  </model> -->
+
+  <!-- Canopy -->
+  <animation>
+    <name>IntCanopy</name>
+    <object-name>intcanope</object-name>
+    <object-name>inttourcanope</object-name>
+    <object-name>intvitrescanope</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 0.45 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
