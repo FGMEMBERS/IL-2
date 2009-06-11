@@ -43,6 +43,8 @@
     <object-name>nacelles</object-name>
     <object-name>echappes</object-name>
     <object-name>air</object-name>
+    <object-name>guns</object-name>
+    <object-name>antenne</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -97,6 +99,8 @@
     <object-name>nacelles</object-name>
     <object-name>echappes</object-name>
     <object-name>air</object-name>
+    <object-name>guns</object-name>
+    <object-name>antenne</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
