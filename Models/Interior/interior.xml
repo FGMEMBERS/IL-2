@@ -19,7 +19,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
     <object-name>intvitrescanope</object-name>
   </animation>
@@ -66,15 +66,15 @@
     </offsets>
   </model>
 
-  <!-- Planches de bord 
+  <!-- Planches de bord -->
   <model>
-    <path>Aircraft/Arsenal-VG33/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/IL-2/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -0.856 </x-m>
+      <x-m> -2.191 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.223 </z-m>
+      <z-m>  0.442 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
   <!-- Canopy -->
   <animation>
@@ -87,7 +87,7 @@
   <animation>
     <type>translate</type>
     <object-name>IntCanopy</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor> 0.45 </factor>
     <axis>
       <x> 1 </x>

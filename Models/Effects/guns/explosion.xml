@@ -8,25 +8,21 @@
     <texture>smoke.png</texture>
 
     <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
 
-    <condition>
-      <property>controls/armament/trigger</property>
-    </condition>
-
-    <emissive>true</emissive>
-    <lighting>true</lighting>
-
-    <attach>local</attach>
+    <emissive> true      </emissive>
+    <lighting> true      </lighting>
+    <align>    billboard </align>  <!-- billboard / fixed -->
+    <attach>   world     </attach> <!-- world / local-->
 
     <placer>
-      <type>point</type> 
+      <type> point </type> <!-- sector / segments / point -->
     </placer>
 
     <shooter>
@@ -55,18 +51,16 @@
       </particles-per-sec>
     </counter>
       
-    <align>billboard</align>
-    
     <particle>
       <start>
         <color>
-          <red><value>   0.9 </value></red>
-          <green><value> 0.5 </value></green>
-          <blue><value>  0.0 </value></blue>
+          <red><value>   0.8 </value></red>
+          <green><value> 0.8 </value></green>
+          <blue><value>  0.1 </value></blue>
           <alpha><value> 0.3 </value></alpha>
         </color>
         <size>
-          <value>0.01</value>
+          <value> 0.3 </value>
         </size>
       </start>
         
@@ -75,25 +69,25 @@
           <red><value>   0.8 </value></red>
           <green><value> 0.8 </value></green>
           <blue><value>  0.8 </value></blue>
-          <alpha><value> 1.0 </value></alpha>
+          <alpha><value> 0.9 </value></alpha>
         </color>
         <size>
-          <value>0.15</value>
+          <value> 20 </value>
         </size>
       </end>
         
       <life-sec>
-        <value>0.10</value>
+        <value> 0.2 </value>
       </life-sec>
         
-      <mass-kg>0.25</mass-kg>
-      <radius-m>0.1</radius-m>
+      <mass-kg>  0.001 </mass-kg>
+      <radius-m> 1.000 </radius-m>
     </particle>
       
     <program>
-      <fluid>air</fluid>
-      <gravity>false</gravity>
-      <wind>false</wind>
+      <fluid>   air   </fluid>
+      <gravity> false </gravity>
+      <wind>    true  </wind>
     </program>
       
   </particlesystem>

@@ -14,12 +14,6 @@
      <splash-texture>Aircraft/IL-2/il2-splash.png</splash-texture>
     </startup>
 
-    <systems>
-      <electrical>
-        <path>Aircraft/j3cub/cub-electrical.xml</path>
-      </electrical>
-    </systems> 
-
     <sound>
       <path>Aircraft/IL-2/Sounds/il2-sound.xml</path>
     </sound>
@@ -33,18 +27,22 @@
 
     <submodels> 
       <serviceable type="bool">true</serviceable>
-      <path>Aircraft/IL-2/Models/Effects/submodels.xml</path>
+      <path>Aircraft/IL-2/Models/Effects/guns/submodels.xml</path>
     </submodels>
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
+      <generic> 
+        <int type="int">0</int>  <!-- 0 immat -->
+        <int type="int">0</int>  <!-- 1 immat -->
+        <int type="int">0</int>  <!-- 2 immat -->
+        <int type="int">0</int>  <!-- 3 immat -->
+        <int type="int">0</int>  <!-- 4 immat -->
+        <int type="int">0</int>  <!-- 5 immat -->
+        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 7 color -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
     </multiplay>
 
@@ -61,7 +59,13 @@
     </help>
 
     <menubar include="Dialogs/il2-menu.xml"/>
-
+<!--
+    <systems>
+      <electrical>
+        <path>Aircraft/j3cub/cub-electrical.xml</path>
+      </electrical>
+    </systems> 
+-->
   </sim>
 
   <yasim>
@@ -81,8 +85,10 @@
   </input>
  
   <nasal>
-    <il2>
+    <doors>
       <file>Aircraft/IL-2/Nasal/doors.nas</file>
+    </doors>
+    <il2>
       <file>Aircraft/IL-2/Nasal/immat.nas</file>
       <file>Aircraft/IL-2/Nasal/liveries.nas</file>
     </il2>

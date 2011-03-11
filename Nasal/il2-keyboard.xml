@@ -7,7 +7,7 @@
     <desc>Crew door</desc>
     <binding>
      <command>nasal</command>
-     <script>il2.doorsystem.crewexport();</script>
+     <script>doors.doorsystem.crewexport();</script>
     </binding>
   </key>
 
