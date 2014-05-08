@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -16,20 +16,20 @@
     <object-name>intvitrescanope</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/IL-2/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitrescanope</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitrescanope</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilot -->
   <model>
     <path>Aircraft/IL-2/Models/Pilot/pilot.xml</path>
@@ -47,8 +47,6 @@
       <x-m> -0.025 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.195 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
       <heading-deg> 180 </heading-deg>
     </offsets>
   </model>
@@ -60,7 +58,6 @@
       <x-m> 0.502 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.582 </z-m>
-      <roll-deg>      0 </roll-deg>
       <pitch-deg>   -15 </pitch-deg>
       <heading-deg>  15 </heading-deg>
     </offsets>
@@ -70,9 +67,9 @@
   <model>
     <path>Aircraft/IL-2/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -2.191 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.442 </z-m>
+      <x-m> -1.95129 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.53931 </z-m>
     </offsets>
   </model>
 
@@ -85,9 +82,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>IntCanopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> 0.45 </factor>
     <axis>
       <x> 1 </x>
@@ -97,4 +108,3 @@
   </animation>
 
 </PropertyList>
-

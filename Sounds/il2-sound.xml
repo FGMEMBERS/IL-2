@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -341,7 +341,7 @@
     <gun>
       <name>Gun left</name>
       <mode>looped</mode>
-      <path>Aircraft/IL-2/Sounds/gunfire_1.wav</path>
+      <path>Aircraft/IL-2/Sounds/gunfire.wav</path>
       <condition>
         <and>
           <property>controls/armament/trigger</property>
@@ -360,7 +360,7 @@
     <gun>
       <name>Gun right</name>
       <mode>looped</mode>
-      <path>Aircraft/IL-2/Sounds/gunfire_1.wav</path>
+      <path>Aircraft/IL-2/Sounds/gunfire.wav</path>
       <condition>
         <and>
           <property>controls/armament/trigger</property>
@@ -379,7 +379,7 @@
     <gun>
       <name>Gun rear</name>
       <mode>looped</mode>
-      <path>Aircraft/IL-2/Sounds/gunfire_1.wav</path>
+      <path>Aircraft/IL-2/Sounds/gunfire.wav</path>
       <condition>
         <and>
           <property>controls/armament/trigger</property>
