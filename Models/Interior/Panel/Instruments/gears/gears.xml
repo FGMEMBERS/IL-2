@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>gears.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>lampredoff</object-name>
+    <object-name>lampgreenoff</object-name>   
+    <object-name>leftred</object-name>
+    <object-name>rightred</object-name>
+    <object-name>leftgreen</object-name>
+    <object-name>rightgreen</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>leftred</object-name>
+    <object-name>rightred</object-name>
+    <emission>
+      <red>   2 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>leftgreen</object-name>
+    <object-name>rightgreen</object-name>
+    <emission>
+      <red>   0 </red>
+      <green> 2 </green>
+      <blue>  0 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>lampredoff</object-name>
+    <emission>
+      <red>   0.1 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>lampgreenoff</object-name>
+    <emission>
+      <red>   0.0 </red>
+      <green> 0.1 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftgreen</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>leftred</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 0 </value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>rightgreen</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[1]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>rightred</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[1]/position-norm</property>
+        <value> 0 </value>
+      </equals>
+    </condition>
+  </animation>
+  
+</PropertyList>
