@@ -9,7 +9,7 @@ data 4
 fond
 texture "gears.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 570
 0.003662 0 -0.036327
 0.002817 0 -0.036327
@@ -4354,7 +4354,7 @@ data 12
 lampgreenoff
 texture "gears.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 386
 0.004027 0 0.00422
 0.004027 0.001128 0.004331
@@ -7375,7 +7375,7 @@ data 10
 lampredoff
 texture "gears.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 386
 0.004027 0 -0.03578
 0.004027 0.001128 -0.035669
@@ -10396,7 +10396,7 @@ data 9
 leftgreen
 texture "gears.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 193
 0.004027 0 0.00422
 0.004027 0.001128 0.004331
@@ -11912,7 +11912,7 @@ data 7
 leftred
 texture "gears.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 193
 0.004027 0 0.02422
 0.004027 0.001128 0.024331
@@ -13428,7 +13428,7 @@ data 10
 rightgreen
 texture "gears.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 193
 0.004027 0 -0.01578
 0.004027 0.001128 -0.015669
@@ -14944,7 +14944,7 @@ data 8
 rightred
 texture "gears.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 193
 0.004027 0 -0.03578
 0.004027 0.001128 -0.035669

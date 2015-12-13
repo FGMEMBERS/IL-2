@@ -10,7 +10,11 @@
   </key>
   <key>
     <name>e</name>
-    <desc>Guns fire</desc>
+    <desc>Wings guns fire</desc>
+  </key>
+  <key>
+    <name>E</name>
+    <desc>Rear guns fire</desc>
   </key>
   
 </PropertyList>

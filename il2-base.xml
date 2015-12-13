@@ -24,6 +24,10 @@
       <livery>
         <file type="string">default</file>
       </livery>
+      <turret n="0">
+        <heading>180</heading>
+        <pitch>0</pitch>
+      </turret>
     </model>
 
     <submodels> 
@@ -44,7 +48,6 @@
         <int n="7"    type="int">  0 </int>                                                 <!-- 7 color -->
         <int n="8"    alias="/systems/electrical/outputs/nav-lights">  0 </int>             <!-- 8 nav-lights -->
         <int n="9"    alias="/sim/model/lights/beacon/state">  false </int>                 <!-- 9 strobe-lights -->
-        <int n="11"   type="int" alias="/sim/model/guns">1</int>
         <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
         <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
         <float n="2"  alias="/position/gear-agl-m"> 0 </float>                              <!-- altitude for MP shadow -->
@@ -59,6 +62,7 @@
         <float n="11" alias="/gear/gear[2]/rollspeed-ms"/>
         <!-- For Bombable -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <int type="int" n="11" alias="controls/armament/trigger2">0</int>
         <string n="9" type="string" />
       </generic>
     </multiplay>
@@ -69,35 +73,29 @@
     
   </sim>
 
-  <yasim>
-    <il2>
-      <pilot-lb>180</pilot-lb>
-    </il2>
-  </yasim>
-
-  <engines>
-    <engine n="0">
-      <engine-num type="int">0</engine-num>
-      <running>true</running>
-    </engine>
-  </engines>
+  <input include="Systems/il2-keyboard.xml"/>
   
-  <input>
-    <keyboard include="Systems/il2-keyboard.xml"/>
-  </input>
- 
+  <yasim include="Systems/yasim.xml"/>
+
+  <controls include="Systems/controls.xml"/>
+  
+  <engines include="Systems/engines.xml"/>
+  
   <nasal>
     <doors>
       <file>Aircraft/IL-2/Nasal/doors.nas</file>
     </doors>
     <il2>
-      <file>Aircraft/IL-2/Nasal/immat.nas</file>
       <file>Aircraft/IL-2/Nasal/liveries.nas</file>
+      <file>Aircraft/IL-2/Nasal/light.nas</file>
     </il2>
     <guns>
       <file>Aircraft/IL-2/Nasal/weapons.nas</file>
       <file>Aircraft/IL-2/Nasal/revi.nas</file>
     </guns>
+    <turrets>
+      <file>Aircraft/IL-2/Nasal/turrets.nas</file>
+    </turrets>
   </nasal>
 
 </PropertyList>

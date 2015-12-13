@@ -10,7 +10,7 @@ data 10
 background
 texture "turn.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 4
 0.000409 0.007958 -0.028787
 0.000409 0.007958 0.028748
@@ -32,7 +32,7 @@ data 4
 ball
 texture "turn.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 37
 0.000899 -0.015928 0.000042
 0.001424 -0.015506 0.000042
@@ -296,7 +296,7 @@ data 4
 face
 texture "turn.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 87
 0.002699 -0.000167 -0.031818
 0.002699 0.011999 -0.029397
@@ -945,7 +945,7 @@ data 4
 fond
 texture "turn.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 160
 0.003883 0.000111 -0.033239
 0.003883 0.006717 -0.0326
@@ -2012,7 +2012,7 @@ data 6
 needle
 texture "turn.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 14
 0.003473 0.028832 0.000507
 0.003473 0.030649 -0.000028
@@ -2104,7 +2104,7 @@ name "vitre"
 loc -0.000028 -0.000038 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 33
 0.003834 0.026898 -0.017972
 0.003834 0.029889 -0.012379

@@ -43,7 +43,7 @@
     <engine> 
       <name>engineslowrun</name>
       <mode>looped</mode>
-      <path>Aircraft/IL-2/Sounds/R-1535Slow.wav</path>
+      <path>Aircraft/IL-2/Sounds/runningslow.wav</path>
       <condition> 
         <property>/engines/engine/running</property>
         <less-than> 
@@ -76,7 +76,7 @@
     <engine>
       <name>enginerun</name>
       <mode>looped</mode>
-      <path>Aircraft/IL-2/Sounds/R-1535.wav</path>
+      <path>Aircraft/IL-2/Sounds/running.wav</path>
       <condition>
         <property>/engines/engine/running</property>
         <greater-than-equals> 
@@ -165,6 +165,37 @@
       <max-dist> 5.0 </max-dist>
     </splash>
 
+    <gear>
+      <name>gear</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/IL-2/Sounds/gears.wav</path>
+      <property>/gear/gear[0]/position-norm</property>
+      <pitch>
+        <internal>dt_play</internal>
+        <offset>1.0</offset>
+        <factor>-0.001</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+    
+    <gear>
+      <name>gear-lock</name>
+      <path>Sounds/gear-lck.wav</path>
+      <condition>
+        <greather-than>
+          <property>/gear/gear[0]/position-norm</property>
+          <value>0.01</value>
+        </greather-than>
+        <less-than>
+          <property>/gear/gear[0]/position-norm</property>
+          <value>0.1</value>
+        </less-than>
+      </condition>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+    
     <squeal>
       <name>squeal</name>
       <path>Sounds/squeal.wav</path>
@@ -338,6 +369,20 @@
       <max-dist>4</max-dist>
     </rain>
 
+    <canopy> 
+      <name>canopy slide</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/IL-2/Sounds/canopy_slide.wav</path>
+      <property>sim/model/door-positions/crew/position-norm</property>
+      <volume> 
+        <factor>0.3</factor>
+      </volume>
+      <reference-dist>10.0</reference-dist>
+      <max-dist>20.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </canopy>
+    
     <gun>
       <name>Gun left</name>
       <mode>looped</mode>
@@ -382,7 +427,7 @@
       <path>Aircraft/IL-2/Sounds/gunfire.wav</path>
       <condition>
         <and>
-          <property>controls/armament/trigger</property>
+          <property>controls/armament/trigger2</property>
           <property>ai/submodels/submodel[0]/count</property>
         </and>
       </condition>

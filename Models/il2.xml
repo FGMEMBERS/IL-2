@@ -50,6 +50,7 @@
     <object-name>nacelles</object-name>
     <object-name>air</object-name>
     <object-name>antenne</object-name>
+    <object-name>bosses</object-name>
     
     <object-name>echappes</object-name>
     <object-name>guns</object-name>
@@ -97,6 +98,7 @@
     <object-name>nacelles</object-name>
     <object-name>air</object-name>
     <object-name>antenne</object-name>
+    <object-name>bosses</object-name>
     
     <object-name>echappes</object-name>
     <object-name>guns</object-name>
@@ -147,6 +149,7 @@
     <object-name>nacelles</object-name>
     <object-name>air</object-name>
     <object-name>antenne</object-name>
+    <object-name>bosses</object-name>
   </effect>
   
   <!-- working for Rembrandt -->
@@ -301,18 +304,6 @@
       <y-m>  2.692 </y-m>
       <z-m> -0.215 </z-m>
       <pitch-deg> 180 </pitch-deg>
-    </offsets>
-  </model>
-  
-  <!-- Arrière --> 
-  <model>
-    <path>Aircraft/IL-2/Models/Effects/guns/fire.xml</path>
-    <offsets>
-      <x-m> 1.076 </x-m>
-      <y-m> 0.154 </y-m>
-      <z-m> 0.730 </z-m>
-      <pitch-deg>  -15 </pitch-deg>
-      <heading-deg> 15 </heading-deg>
     </offsets>
   </model>
   
@@ -887,5 +878,51 @@
       <z> 0 </z>
     </axis>
   </animation>
+  
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/IL-2/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 4.51384 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 1.87757 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/IL-2/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -2.15981 </x-m>
+      <y-m> -7.26961 </y-m>
+      <z-m>  0.10616 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-2/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -2.05981 </x-m>
+      <y-m> -7.26961 </y-m>
+      <z-m>  0.10616 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-2/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -2.15981 </x-m>
+      <y-m>  7.26961 </y-m>
+      <z-m>  0.10616 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/IL-2/Models/lights/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -2.05981 </x-m>
+      <y-m>  7.26961 </y-m>
+      <z-m>  0.10616 </z-m>
+    </offsets>
+  </model>
   
 </PropertyList>

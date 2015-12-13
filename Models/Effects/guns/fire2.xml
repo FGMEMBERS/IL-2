@@ -8,7 +8,7 @@
     <texture>smoke.png</texture>
 
     <condition>
-      <property>controls/armament/trigger</property>
+      <property>controls/armament/trigger2</property>
     </condition>
 
     <emissive>true</emissive>

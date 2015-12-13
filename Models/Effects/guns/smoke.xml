@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <particlesystem>
     <name>tyre-smoke-n</name>
     <texture>smoke.png</texture>
     <emissive>false</emissive>
     <lighting>false</lighting>
-
-    <condition>
-      <and>
-        <!-- /gear/gear[2]/wow -->
-        <property>sim/multiplay/generic/float[8]</property>
-        <greater-than>
-          <!-- /gear/gear[2]/rollspeed-ms -->
-          <property>sim/multiplay/generic/float[11]</property>
-          <value>15</value>
-        </greater-than>
-      </and>
-    </condition>
-
+    
     <attach>world</attach>
-
+    
     <placer>
       <type>point</type>
     </placer>
-
+    
     <shooter>
-      <theta-min-deg>  45 </theta-min-deg>
-      <theta-max-deg>  85 </theta-max-deg>
-      <phi-min-deg>   -60 </phi-min-deg>
-      <phi-max-deg>    60 </phi-max-deg>
+      <theta-min-deg> 87.5 </theta-min-deg>
+      <theta-max-deg> 92.5 </theta-max-deg>
+      <phi-min-deg>   -2.5 </phi-min-deg>
+      <phi-max-deg>    2.5 </phi-max-deg>
       <speed-mps>
-        <value>  50 </value>
-        <spread>  5 </spread>
+        <value> 50 </value>
+        <spread> 5 </spread>
       </speed-mps>
       <rotation-speed>
         <x-max-deg-sec>  15 </x-max-deg-sec>
@@ -44,16 +32,16 @@
         <z-min-deg-sec> -15 </z-min-deg-sec>
       </rotation-speed>
     </shooter>
-
+    
     <counter>
       <particles-per-sec>
-        <value>150</value>
-        <spread>0</spread>
+        <value>  5 </value>
+        <spread> 30 </spread>
       </particles-per-sec>
     </counter>
-
+    
     <align>billboard</align>
-
+    
     <particle>
       <start>
         <color>
@@ -62,28 +50,30 @@
           <blue><value>  0.95 </value></blue>
           <alpha><value> 0.05 </value></alpha>
         </color>
-        <size><value> 0.5 </value></size>
+        <size><value> 0.25 </value></size>
       </start>
       <end>
         <color>
-          <red><value>   1.000 </value></red>
-          <green><value> 1.000 </value></green>
-          <blue><value>  1.000 </value></blue>
-          <alpha><value> 0.020 </value></alpha>
+          <red><value>   1.00 </value></red>
+          <green><value> 1.00 </value></green>
+          <blue><value>  1.00 </value></blue>
+          <alpha><value> 0.02 </value></alpha>
         </color>
-        <size><value> 3 </value></size>
+        <size><value> 1 </value></size>
       </end>
-      <life-sec><value> 0.5 </value></life-sec>
-      <mass-kg>  0.025 </mass-kg>
+      <life-sec>
+        <value> 0.5 </value>
+      </life-sec>
+      <mass-kg>  0.005 </mass-kg>
       <radius-m> 0.175 </radius-m>
     </particle>
-
+    
     <program>
       <fluid>   air  </fluid>
       <gravity> true </gravity>
       <wind>    true </wind>
     </program>
-
+    
   </particlesystem>
-
+  
 </PropertyList>
