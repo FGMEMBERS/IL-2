@@ -7,6 +7,7 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>planchet</object-name>
     <object-name>intcanope</object-name>
     <object-name>inttour</object-name>
     <object-name>inttourcanope</object-name>
@@ -58,8 +59,6 @@
       <x-m> 0.502 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.582 </z-m>
-      <pitch-deg>   -15 </pitch-deg>
-      <heading-deg>  15 </heading-deg>
     </offsets>
   </model>
 

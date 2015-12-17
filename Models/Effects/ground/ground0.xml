@@ -15,7 +15,7 @@
         <greater-than>
           <!-- /gear/gear[0]/rollspeed-ms -->
           <property>sim/multiplay/generic/float[9]</property>
-          <value>5</value>
+          <value>15</value>
         </greater-than>
       </and>
     </condition>

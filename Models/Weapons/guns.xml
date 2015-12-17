@@ -11,4 +11,39 @@
     <!-- Objets transparents -->
   </animation>
 
+  <model>
+    <name>RearFire</name>
+    <path>Aircraft/IL-2/Models/Effects/guns/fire2.xml</path>
+    <offsets>
+      <x-m> -0.648 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.011 </z-m>
+    </offsets>
+  </model>
+  
+  <!--==========Turning Turret =====================-->
+  <animation>
+    <type>rotate</type>
+    <object-name>gun</object-name>
+    <object-name>RearFire</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>gun</object-name>
+    <object-name>RearFire</object-name>
+    <property>sim/model/turret[0]/pitch</property>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
 </PropertyList>
